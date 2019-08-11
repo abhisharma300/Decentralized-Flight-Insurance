@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper1" class="top-20">
+        </div>
+    </main>
+
+
+
+   <main class="container">
+
+        <div id="display-wrapper2" class="top-15">
+		<label>Register Airline</label>
+        </div>
+        <div class="row top-10">
+		    <label for="airline-name">Airline Name</label>
+             <input type="text" id="airline-name">
+			 <label for="airline-address">Airline Address</label>			 
+			 <input type="text" id="airline-address">  <btn class="btn btn-primary" id="register-airline">Register Airline</btn>
+        </div>
+    </main>
+	
+	<main class="container">
+
+        <div id="display-wrapper3" class="top-10">
+		<label>Fund Airline</label>
+        </div>
+        <div class="row top-10">
+		    <label for="funded-airline">Airline Address</label>
+            <input type="text" id="funded-airline"> <btn class="btn btn-primary" id="fund-airline">Fund Airline</btn>
+        </div>
+    </main>
+	
+	
+		<main class="container">
+
+        <div id="display-wrapper4" class="top-5">
+			<label>Purchase Insurance</label>
+        </div>
+        <div class="row top-5">
+        <label for="passenger-address-buy">Passenger Address</label> <input type="text" id="passenger-address-buy"> 
+		
+		 <label for="FlightId"> Select Flight ID</label>
+		<select id="FlightId">
+		<option value="1">901</option>
+		<option value="2">902</option>
+		<option value="3">903</option>
+		</select>
+       
+	    <label for="FlightTime"> Select Flight Time</label>
+		<select id="FlightTime">
+		<option value="1">1300</option>
+		<option value="2">1400</option>
+		<option value="3">1500</option>
+		</select>
+		<btn class="btn btn-primary" id="purchase-insurance">Purchase Insurance</btn>
+        </div>
+    </main>
+	
+	   <main class="container">
+        <div id="display-wrapper5" class="top-20">
+		<label>Check Flight Status</label>
+        </div>
+      <div class="row top-10">
+	  
+	    <label for="airline-address-fltstatus">Airline Address</label> <input type="text" id="airline-address-fltstatus"> 
+	  
+	  	 <label for="FlightIdStatus"> Select Flight ID</label>
+		<select id="FlightIdStatus">
+		<option value="1">901</option>
+		<option value="2">902</option>
+		<option value="3">903</option>
+		</select>
+	  
+	  	<label for="FlightTimeStatus"> Select Flight Time</label>
+		<select id="FlightTimeStatus">
+		<option value="1">1300</option>
+		<option value="2">1400</option>
+		<option value="3">1500</option>
+		</select>
+	    
+	  <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div>
+		</main>
+		
+	<main class="container">
+
+        <div id="display-wrapper2" class="top-15">
+		<label>Check Claim Applicable</label>
+        </div>
+        <div class="row top-10">
+		    <label for="passenger-address-claimn">Passenger Address</label>
+             <input type="text" id="passenger-claimcheck">
+					 
+			 <btn class="btn btn-primary" id="claim-applicable">Check Claim Applicable</btn>
+        </div>
+    </main>
+		
+	
+		<main class="container">
+
+        <div id="display-wrapper2" class="top-15">
+		<label>Withdraw Claim Amount</label>
+        </div>
+        <div class="row top-10">
+		    <label for="passenger-address-withdraw">Passenger Address</label>
+             <input type="text" id="passenger-withdraw">
+					 
+			 <btn class="btn btn-primary" id="claim-withdraw">Withdraw Claim</btn>
+        </div>
+    </main>
+	
+	
+			<main class="container">
+
+        <div id="display-wrapper2" class="top-15">
+		<label>Display Passenger Account Balance</label>
+        </div>
+        <div class="row top-10">
+		    <label for="passenger-address-balance">Passenger Address</label>
+             <input type="text" id="passenger-address-balance">
+					 
+			 <btn class="btn btn-primary" id="passenger-balance">Check Balance</btn>
+        </div>
+    </main>
+		
+	
+	
+</body>
+
+</html>
