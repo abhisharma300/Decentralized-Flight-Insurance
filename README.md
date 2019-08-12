@@ -4,7 +4,8 @@ Concept:
 This is a decentralized implementation of flight delay insurance. 
 It consists of smart contract on Ethereum coupled with Oracles to provide auto claim disbursal to passengers in case of delay.
 
---> Below are the key attributes
+Below are the key attributes
+
 a. Managed as collaboration between multiple airlines
 b. Passengers can purchase insurance prior to a Flight
 c. If the flight is delayed to airline Fault, passengers are paid the 1.5 times the amount paid for insurance
@@ -25,6 +26,7 @@ DAPP Client
 Data structure for Airlines is defined in Data Contract. The first airline is registered in the constructor of the APP Contract.The address of the first airline will be APP Contract Owner.
 
 Business Rules:
+Registering New Airline:
 1. Only Existing Airline can register a new Airline until there are atleast 4 airlines registered.
 2. Multi Party Consensus: Registration of Fifth & subsequent Airline requires multi-party consensus of 50% of registered airlines
 
@@ -39,44 +41,19 @@ Flight Time are hard coded as: "1300,1400,1500"
 
 
 ## Oracles 
-The FlightSurety DApp start "10" Oracle by registering with smart contract. Multiple oralces are regi
-The registered Oracles watch for the OracleRequest event and respond based on at least one match of their index to the request's index values. 
-After at least two of the same responses are received by the FlightSuretyApp contract, the request is accepted as the flight status and the request is closed. 
-To trigger the Oracle flight status request, click on the Submit to Oracles button. 
+Oracles are used to provide flight status information (i.e. external data ) into smart contract.
+Multiple oralces are registred with Smart Contract to decentralize trust. Oracles are implemented as server application.
+Register Oracle: 20+ oracles are initiated at project start-up and register with Smart Contract
 
-When it's determined via the Oracles that a flight is delayed, the FlightSuretyApp contract will automatically go through the list of insured passengers for the flight and will mark them as "Eligible For Payout".
-
-
-The passenger is then able to initiate the payout withdrawal to transfer the funds to their account or wallet address. 
-
-Reference:
-(images/Registered-Oracles.png)
-
-
-## Check Flight Status
-
-This can be tested through DAPP:
-The user needs to enter Airline Address, Select flight time, flight id and click on "Submit to Oracles" 
-
-Since, we have reduced the oracles to "10" and if there is not match between index of the request and registered oracles. 
-In that case, we may have to perfrom this step multipe time.
+Flight Status Request Event: is trigerred through DAPP UI, interacts with smart contract and generates request to Oracle to fetch flight status. In real tme scenario, it would be an API notifying the oracle for delay in flight.
 
 After consensus is acheived on Flight Status by two oracles, the request is closed. If the Status of the flight is delayed , then all passengers who had purchased the insurance for the flight
-are marked as "Eligible for Payout"
-
-Reference:
-(images/Submit-To-Oracle-Invocation.png)
-(images/Submit-To-Oracle-Invocation.png)
+are marked as "Eligible for Payout
 
 
 ## Check Claim Status
 
-The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout.
-The status of their Claim can be check through DAPP, with button "Check Claim Applicable"
-
-Reference:
-(images/Check-Claim-Applicable-Invocation.png)
-(images/Check-Claim-Applicable-Result.png)
+The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout. The status of their Claim can be check through DAPP, with button "Check Claim Applicable"
 
 
 ## Withdrawl
