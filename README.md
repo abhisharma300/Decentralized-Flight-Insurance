@@ -82,16 +82,22 @@ The InsurancePassengerPayout event is emitted and the passenger's FlightSurety a
 
 ![Screenshot](Images/Submit-To-Oracle-Result.png)
 
+### Withdrawl
+
+The passengers, who had been marked as eligible for Payout can withdraw claim amount to their wallet. This can be done by clicking on button "Withdraw Claim"
+This method will transfer "1.5" ether to passenger account and reset passenger status to "Not eligible for payout"
+
+![Screenshot](Images/Withdraw-Claim-Invocation.png)
+
 
 ### Check Claim Status
 
 The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout. The status of their Claim can be check through DAPP, with button "Check Claim Applicable"
 
 
-### Withdrawl
 
-The passengers, who had been marked as eligible for Payout can withdraw claim amount to their wallet. This can be done by clicking on button "Withdraw Claim"
-This method will transfer "1.5" ether to passenger account and reset passenger status to "Not eligible for payout"
+
+
 
 
 
