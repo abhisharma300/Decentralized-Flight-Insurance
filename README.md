@@ -4,7 +4,7 @@
 This is a decentralized implementation of flight delay insurance. 
 It consists of smart contract on Ethereum coupled with Oracles to provide auto claim disbursal to passengers in case of delay.
 
-Below are the key attributes
+### Below are the key attributes
 
 a. Managed as collaboration between multiple airlines
 b. Passengers can purchase insurance prior to a Flight
