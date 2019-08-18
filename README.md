@@ -92,14 +92,17 @@ This method will transfer "1.5" ether to passenger account and reset passenger s
 
 ### Check Claim Status
 
-The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout. The status of their Claim can be check through DAPP, with button "Check Claim Applicable"
+The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout. The status of their Claim can be check through DAPP, with button "Check Claim Applicable".
+After "withdrawing" the claim amount, the status of the claimant will change to "Not ELigible For Claim Amount Withdrawl"
+
+Claim Status for eligible Passengers
+![Screenshot](Images/Check-Claim-Applicable-Result.png)
 
 
 
+Claim Status after withdrawl of claim amount
 
-
-
-
+![Screenshot](Images/Claim-Status-After-Withdrawl.png)
 
 
 
