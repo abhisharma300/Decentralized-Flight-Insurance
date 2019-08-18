@@ -66,10 +66,17 @@ The registered Oracles watch for the OracleRequest event and respond based on at
 
 
 
-Flight Status Request Event: is trigerred through DAPP UI, interacts with smart contract and generates request to Oracle to fetch flight status. In real tme scenario, it would be an API notifying the oracle for delay in flight.
+**Flight Status Request Event**
+To trigger the Oracle flight status request, click on the Submit to Oracles button. It interacts with smart contract and generates Oracle Request Event which is being listened to by the Oracles. You may need to do the request more than once before a 'late' status event is emitted.
 
-After consensus is acheived on Flight Status by two oracles, the request is closed. If the Status of the flight is delayed , then all passengers who had purchased the insurance for the flight
+In real tme scenario, it would be an API notifying the oracle for delay in flight.
+The registered Oracles watch for the OracleRequest event and respond based on at least one match of their index to the request's index values.
+After consensus is acheived on a partiular Flight Status by two oracles, the request is closed. 
+If the Status of the flight is delayed , then all passengers who had purchased the insurance for the flight
 are marked as "Eligible for Payout
+
+When it's determined via the Oracles that a flight is delayed, the FlightSuretyApp contract will automatically go through the list of insured passengers for the flight are marked as "Eligible for Payout. 
+The InsurancePassengerPayout event is emitted and the passenger's FlightSurety account is credited with the payout.
 
 
 ### Check Claim Status
