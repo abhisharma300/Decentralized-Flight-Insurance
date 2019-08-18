@@ -23,7 +23,7 @@ DAPP Client
 ![Screenshot](Images/Check-Balance.png)
 ## Actors
 
-## Airline
+### Airline
 Data structure for Airlines is defined in Data Contract. The first airline is registered in the constructor of the APP Contract.The address of the first airline will be APP Contract Owner.
 
 Business Rules:
@@ -31,12 +31,12 @@ Registering New Airline:
 1. Only Existing Airline can register a new Airline until there are atleast 4 airlines registered.
 2. Multi Party Consensus: Registration of Fifth & subsequent Airline requires multi-party consensus of 50% of registered airlines
 
-## Flight
+### Flight
 Flight ID's are hard coded as: "901,902,903"
 Flight Time are hard coded as: "1300,1400,1500"
 
 
-## Insurance
+### Insurance
 *  A passenger can buy insurance by selecting the flight id & Flight schedule.
 *  A passenger needs to pay upto 1 ether to buy insurance
 
@@ -52,12 +52,12 @@ After consensus is acheived on Flight Status by two oracles, the request is clos
 are marked as "Eligible for Payout
 
 
-## Check Claim Status
+### Check Claim Status
 
 The passengers, who had purchased insurance for the flight which got delayed based on response of flight status have been marked for payout. The status of their Claim can be check through DAPP, with button "Check Claim Applicable"
 
 
-## Withdrawl
+### Withdrawl
 
 The passengers, who had been marked as eligible for Payout can withdraw claim amount to their wallet. This can be done by clicking on button "Withdraw Claim"
 This method will transfer "1.5" ether to passenger account and reset passenger status to "Not eligible for payout"
@@ -91,7 +91,7 @@ v10.15.3
 Solidity v0.4.25 (solc-js)
 
 
-## Develop Client
+### Develop Client
 
 To run truffle tests:
 
