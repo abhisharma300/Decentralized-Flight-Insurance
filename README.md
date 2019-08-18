@@ -48,6 +48,8 @@ Flight Time are hard coded as: "1300,1400,1500"
 *  A passenger can buy insurance by selecting the flight id & Flight schedule.
 *  A passenger needs to pay upto 1 ether to buy insurance
 
+![Screenshot](Images/Purchase-Insurance-Invocation.png.png)
+
 
 ## Oracles 
 Oracles are used to provide flight status information (i.e. external data ) into smart contract.
