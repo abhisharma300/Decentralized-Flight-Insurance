@@ -9,7 +9,9 @@ It consists of smart contract on Ethereum coupled with Oracles to provide auto c
 a. Managed as collaboration between multiple airlines
 
 b. Passengers can purchase insurance prior to a Flight
+
 c. If the flight is delayed to airline Fault, passengers are paid the 1.5 times the amount paid for insurance
+
 d. Oracles provide flight status information into Smart Contract
 
 
