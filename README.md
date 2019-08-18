@@ -58,9 +58,11 @@ Flight Time are hard coded as: "1300,1400,1500"
 Oracles are used to provide flight status information (i.e. external data ) into smart contract. Oracles are implemented as server application. Multiple oralces are registred with Smart Contract to decentralize trust. 
 
 **Register Oracle**
-10+ oracles are initiated at project start-up and register with App Smart Contract by paying fee of 1 ether. Each Oracle that is registered is assigned a set of 3 indexes by the Smart Contract. 
 
-The registered Oracles watch for the OracleRequest event and respond based on at least one match of their index to the request's index values. Once registered via the Oracle server simulator you can use the DApp UI to trigger the request for flight status information. 
+10+ oracles are initiated at project start-up and register with App Smart Contract by paying fee of 1 ether. 
+- Each Oracle that is registered is assigned a set of 3 indexes by the Smart Contract. 
+- The registered Oracles watch for the OracleRequest event and respond based on at least one match of their index to the request's index values. 
+- Once registered via the Oracle server simulator you can use the DApp UI to trigger the request for flight status information. 
 
 ![Screenshot](Images/Registered-Oracles.png)
 
