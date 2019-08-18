@@ -15,11 +15,15 @@ c. If the flight is delayed to airline Fault, passengers are paid the 1.5 times 
 d. Oracles provide flight status information into Smart Contract
 
 
-Architecture: is divided into on-chain & off-chain as below: 
+### Architecture: is divided into on-chain & off-chain as below: 
 Smart Contracts: are split into following two:
-	App Contract (Upgradable Business Logic)
-	Data Contract (Captures Persistent d data structures for Airline, Flight, Passenger & Insurance details.
+
+App Contract (Upgradable Business Logic)
+
+Data Contract (Captures Persistent d data structures for Airline, Flight, Passenger & Insurance details.
+
 Oracle: server application which will provide flight status to smart contract
+
 DAPP Client
 
 
