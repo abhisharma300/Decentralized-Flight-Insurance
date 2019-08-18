@@ -30,7 +30,8 @@ c. DAPP Client
 
 ### Airline
 Data structure for Airlines is defined in Data Contract. The first airline is registered & funded during deployment of the contract through constructor.The address of the first airline will be APP Contract Owner.
-Further airlines can be registered through DAPP. Below business rules are implemented for Registering of New Airlines:
+Further airlines can be registered through DAPP. 
+Below business rules are implemented for Registering of New Airlines:
 
 1. Only Existing Airline can register a new Airline until there are atleast 4 airlines registered.
 2. Multi Party Consensus: Registration of Fifth & subsequent Airline requires multi-party consensus of 50% of registered airlines
