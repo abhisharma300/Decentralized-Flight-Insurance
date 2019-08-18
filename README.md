@@ -19,8 +19,8 @@ Smart Contracts: are split into following two:
 Oracle: server application which will provide flight status to smart contract
 DAPP Client
 
-https://imge.to/i/VK9mf
-![alt text](https://imge.to/i/VK9mf)
+
+![Screenshot](Images/Check-Balance.png)
 ## Actors
 
 ## Airline
