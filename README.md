@@ -47,8 +47,11 @@ Flight Time are hard coded as: "1300,1400,1500"
 ### Purchase Insurance
 *  A passenger can buy insurance by selecting the flight id & Flight schedule.
 *  A passenger needs to pay upto 1 ether to buy insurance
+*  Event is emitted by the contract on successful execution of purchase insurance
+
 
 ![Screenshot](Images/Purchase-Insurance-Invocation.png)
+![Screenshot](Images/Purchase-Insurance-Result.png)
 
 
 ## Oracles 
