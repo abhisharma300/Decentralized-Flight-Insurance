@@ -78,6 +78,10 @@ are marked as "Eligible for Payout
 When it's determined via the Oracles that a flight is delayed, the FlightSuretyApp contract will automatically go through the list of insured passengers for the flight are marked as "Eligible for Payout. 
 The InsurancePassengerPayout event is emitted and the passenger's FlightSurety account is credited with the payout.
 
+![Screenshot](Images/Submit-To-Oracle-Invocation.png)
+
+![Screenshot](Images/Submit-To-Oracle-Result.png)
+
 
 ### Check Claim Status
 
