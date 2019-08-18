@@ -44,7 +44,7 @@ Flight ID's are hard coded as: "901,902,903"
 Flight Time are hard coded as: "1300,1400,1500"
 
 
-### Insurance
+### Purchase Insurance
 *  A passenger can buy insurance by selecting the flight id & Flight schedule.
 *  A passenger needs to pay upto 1 ether to buy insurance
 
