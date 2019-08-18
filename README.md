@@ -25,7 +25,7 @@ b. Oracle: server application which will provide flight status to smart contract
 c. DAPP Client
 
 
-![Screenshot](Images/Check-Balance.png)
+![Screenshot](Images/Architecture.png)
 ## Actors
 
 ### Airline
