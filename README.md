@@ -16,13 +16,13 @@ d. Oracles provide flight status information into Smart Contract
 
 
 ### Architecture: is divided into on-chain & off-chain as below: 
-Smart Contracts: are split into following :
+a. Smart Contracts: are split into following :
   - App Contract (Upgradable Business Logic)
   - Data Contract (Captures Persistent d data structures for Airline, Flight, Passenger & Insurance details.
 
-Oracle: server application which will provide flight status to smart contract
+b. Oracle: server application which will provide flight status to smart contract
 
-DAPP Client
+c. DAPP Client
 
 
 ![Screenshot](Images/Check-Balance.png)
